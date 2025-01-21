@@ -22,8 +22,6 @@ public class Game implements Serializable{
 	private String plataforma;
 	private Double pontuacao;
 	private String imgUrl;
-	
-	
 	private String curtaDescricao;
 	
 	@Column(columnDefinition = "TEXT")
@@ -35,7 +33,6 @@ public class Game implements Serializable{
 	public Game(Long id, String titulo, Integer ano, String genero,
 			String plataforma, Double pontuacao, String imgUrl,
 			String curtaDescricao, String longaDescricao) {
-		super();
 		this.id = id;
 		this.titulo = titulo;
 		this.ano = ano;
