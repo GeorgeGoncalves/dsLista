@@ -3,6 +3,7 @@ package com.example.dslist.entidades;
 import java.io.Serializable;
 import java.util.Objects;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -21,7 +22,11 @@ public class Game implements Serializable{
 	private String plataforma;
 	private Double pontuacao;
 	private String imgUrl;
+	
+	
 	private String curtaDescricao;
+	
+	@Column(columnDefinition = "TEXT")
 	private String longaDescricao;
 	
 	public Game() {
