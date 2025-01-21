@@ -16,13 +16,13 @@ public class GameDTO implements Serializable{
 	public GameDTO() {
 	}
 
-	public GameDTO(Game entity) {
+	public GameDTO(Game entidade) {
 		super();
-		id = entity.getId();
-		titulo = entity.getTitulo();
-		ano = entity.getAno();
-		imgUrl = entity.getImgUrl();
-		curtaDescricao = entity.getCurtaDescricao();
+		id = entidade.getId();
+		titulo = entidade.getTitulo();
+		ano = entidade.getAno();
+		imgUrl = entidade.getImgUrl();
+		curtaDescricao = entidade.getCurtaDescricao();
 	}
 
 	public Long getId() {

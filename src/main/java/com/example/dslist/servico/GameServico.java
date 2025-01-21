@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.example.dslist.dto.GameDTO;
+import com.example.dslist.dto.GameDTOTodos;
 import com.example.dslist.entidades.Game;
 import com.example.dslist.repositorio.GameRepositorio;
 
@@ -22,4 +23,9 @@ public class GameServico {
 		return dto;
 	}
 
+	public GameDTOTodos findById(Long id) {
+		Game resultado = gameRepositorio.findById(id).get();
+		GameDTOTodos dtoTodos = new GameDTOTodos(resultado);
+		return dtoTodos;
+	}
 }
