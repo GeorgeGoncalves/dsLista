@@ -15,7 +15,7 @@ public class GameServico {
 	
 	@Autowired
 	private GameRepositorio gameRepositorio;
-	
+
 	public List<GameDTO> findAll() {
 		List<Game> resultado = gameRepositorio.findAll();
 		List<GameDTO> dto = resultado.stream().map(x ->
