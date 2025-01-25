@@ -17,7 +17,7 @@ Foi utilizada a arquitetura de 3 camadas.
 ![](https://github.com/user-attachments/assets/62ef98de-f7c2-485a-a4f4-5849d6d84192)
 
 ### Como executar o projeto
-Pré-requesito: Java 21
+Pré-requesito: Java 17
 ```bash
 # clonar o repositorio
 https://github.com/GeorgeGoncalves/dsLista.git
